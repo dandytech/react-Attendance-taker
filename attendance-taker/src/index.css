@@ -1,0 +1,107 @@
+.App {
+  margin: auto;
+  width: 80%;
+}
+.App h3 {
+  text-align: center;
+}
+
+.timer {
+  box-shadow: 1px 1px 5px #aaaaaa;
+  text-align: center;
+  font-weight: bold;
+}
+
+.timer label {
+  display: block;
+}
+
+.members {
+  box-shadow: 1px 1px 5px #aaaaaa;
+  max-height: 300px;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+@media (max-width: 1000px) {
+  .members {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .members {
+    grid-template-columns: auto;
+  }
+}
+
+.members li {
+  list-style: none;
+  padding: 10px;
+  border: 1px solid rgb(230, 227, 227);
+  width: 300px;
+}
+
+.members label {
+  display: block;
+  padding-top: 5px;
+}
+.members img {
+  float: left;
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid rgb(233, 240, 233);
+}
+
+.button {
+  padding: 2px 10px 2px 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+.choose {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sign {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+}
+
+.signin,
+.signout {
+  box-shadow: 1px 1px 5px #aaaaaa;
+  width: 50%;
+  padding: 5px;
+  text-align: right;
+}
+.signout {
+  background-color: rgba(244, 236, 227, 0.769);
+}
+
+.sign input,
+.signout input {
+  border-radius: 7px;
+  padding: 5px;
+}
+
+@media (max-width: 650px) {
+  .signin,
+  .signout {
+    width: 100%;
+  }
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+.selected {
+  background-color: rgba(244, 236, 227, 0.769);
+}
+ul li:hover {
+  background-color: rgba(244, 236, 227, 0.769);
+}
